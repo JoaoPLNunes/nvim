@@ -7,6 +7,18 @@ return{
     },
         lazy = false, 
     config = function()
+        filesystem = {
+            filtered_items = {
+              visible = false, 
+              hide_dotfiles = true,
+              hide_gitignored = true,
+              hide_ignored = true, 
+              ignore_files = {
+                ".neotreeignore",
+                ".ignore",
+              },
+            }
+        },
         vim.keymap.set('n','<C-e>',':Neotree toggle<CR>',{})
     end
 }
