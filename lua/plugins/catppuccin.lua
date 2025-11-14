@@ -77,19 +77,6 @@ return {
           },
         },
       })
-
-      -- autocmd para sobrescrever highlights
-      vim.api.nvim_create_autocmd("ColorScheme", {
-        pattern = "catppuccin",
-        callback = function()
-          vim.api.nvim_set_hl(0, "MsgArea", { bg = "#8aadf4", fg = "#181926" })
-          vim.api.nvim_set_hl(0, "ErrorMsg", { fg = "#ff5555", bg = "#181926", bold = true })
-          vim.api.nvim_set_hl(0, "WarningMsg", { fg = "#ff8800", bg = "#181926", bold = true })
-          vim.api.nvim_set_hl(0, "DiagnosticError", { fg = "#ff5555" })
-          vim.api.nvim_set_hl(0, "MoreMsg", { bg = "#181926", fg = "#000000" })
-        end,
-      })
-
       vim.cmd.colorscheme("catppuccin")
     end,
   }
