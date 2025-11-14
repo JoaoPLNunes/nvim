@@ -1,5 +1,4 @@
 # Neovim Lazy Config
 
-Minha config inicial do neovim! Com telescope, catpuccin, treesitter, neo-tree e lualine (mais no futuro)
+Config de neovim com LSP, autocomplete e formatter, dashboard de inicio, neotree, etc, para Python e Lua.
 
-### TODO escrever atalhos
