@@ -9,6 +9,8 @@ return {
                 null_ls.builtins.formatting.black,
                 null_ls.builtins.formatting.isort,
                 null_ls.builtins.code_actions.refactoring,
+                null_ls.builtins.formatting.clang_format,
+                null_ls.builtins.diagnostics.cppcheck,
             },
         })
         vim.keymap.set("n", "<leader>gf", function()
